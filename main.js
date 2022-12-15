@@ -74,7 +74,9 @@ var fullName = '   Hien JS JS abc xasd acsc JS JS J S   ';
 // console.log(languages.split(''))
 
 
-var languages = ['Javascript, PHP, Ruby'] 
+var languages = [
+    'Javascript', 
+    'PHP', 
+    'Ruby'];
 console.log(languages)
-
-console.log(languages.join("avc"))
+console.log(languages.join('a'))
