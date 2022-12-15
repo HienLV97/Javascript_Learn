@@ -7,10 +7,10 @@ var age = 26;
 // alert(age)
 
 //console.log(fullName)
+a
+// confirm('Hãy xác nhận rằng Hiển dedjp trai')
 
-//confirm('Hãy xác nhận rằng Hiển đẹp trai')
-
-//prompt('Xac nhan bạn đủ tuổi:')
+//prompt('Xac nhan bạn đủ tuổi:')   
 
 // setTimeout(function(){
 //     alert('Hien dep trai')
@@ -72,4 +72,9 @@ var fullName = '   Hien JS JS abc xasd acsc JS JS J S   ';
 // console.log(fullName.trim())
 // var languages = 'Javascript, PHP, Ruby'
 // console.log(languages.split(''))
-console.log(fullName.trim()[3])
+
+
+var languages = ['Javascript, PHP, Ruby'] 
+console.log(languages)
+
+console.log(languages.join("avc"))
