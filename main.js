@@ -92,25 +92,6 @@ var fullName = '   Hien JS JS abc xasd acsc JS JS J S   ';
 // }
 // writeLog('a chuong')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function test(){
     for (var param of arguments){
 
@@ -118,4 +99,4 @@ function test(){
 
     }
 }
-test('Log1','l2')
+test('Log1','l2','log3')
