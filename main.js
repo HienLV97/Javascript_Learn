@@ -1,19 +1,19 @@
 //khai bao bien
 
-var age = 26;
+// var age = 26;
 
 // Call ham thong bao
 // alert(fullName)
 // alert(age)
 
 //console.log(fullName)
-a
+
 // confirm('Hãy xác nhận rằng Hiển dedjp trai')
 
 //prompt('Xac nhan bạn đủ tuổi:')   
 
 // setTimeout(function(){
-//     alert('Hien dep trai')
+//     alert('Hien dep trai') 
 // }, 2000)
 
 //console.log(age)
@@ -39,32 +39,32 @@ a
 //     console.log('so le')
 // }
 
-var number2 = 5
-var number = 5
-var output = number-- + number-- + number-- + number--;
-var output2 = number2 + --number2 + --number2 + --number2
+// var number2 = 5
+// var number = 5
+// var output = number-- + number-- + number-- + number--;
+// var output2 = number2 + --number2 + --number2 + --number2
 
 
 // console.log(number)
 // console.log(output) 
 // console.log(output2)
- 
-var a = 'abc'
-var b = 'cde'
-var c = 'z'
-var result = 'aZ' || 'Zz' || undefined || 'cc' || 'zz'
+
+// var a = 'abc'
+// var b = 'cde'
+// var c = 'z'
+// var result = 'aZ' || 'Zz' || undefined || 'cc' || 'zz'
 //var result ='A' && 'B' && 'C' || 'D'
 //console.log(result)
 
 
-var ten = 'Hien'
-var ho = 'Le'
-var lot = 'Vinh'
-var fullName = '   Hien JS JS abc xasd acsc JS JS J S   ';
+// var ten = 'Hien'
+// var ho = 'Le'
+// var lot = 'Vinh'
+// var fullName = '   Hien JS JS abc xasd acsc JS JS J S   ';
 
 // console.log(fullName.search('JS'))
 // console.log(fullName)
-// //console.log(fullName.slice(-3,-1 ))
+//console.log(fullName.slice(-3,-1 ))
 // console.log(fullName.replace(/JS/g,'JavaScript'))
 
 // console.log(fullName.toUpperCase())
@@ -88,15 +88,43 @@ var fullName = '   Hien JS JS abc xasd acsc JS JS J S   ';
 
 //     console.log(message2)
 //     console.log(message3)
-    
+
 // }
 // writeLog('a chuong')
 
-function test(){
-    for (var param of arguments){
-
-        console.log(arguments)
-
+function test2333() {
+    var dulieu = '';
+    for (var param of arguments) {
+        dulieu += `${param} + `
     }
+    console.log(dulieu)
 }
-test('Log1','l2','log3','log3')
+test2333('Data1', 'dat2', 'data3', 'data4')
+
+
+function test() {
+    var myString = '';
+    for (var param of arguments) {
+        myString += `${param} - `
+    }
+    console.log(myString)
+}
+test('Log1', 'l2', 'log3', 'log33')
+
+// Return trong hàm 
+function cong(soA, soB) {
+    return soA + soB
+}
+var result = cong(20, 8)
+console.log(result)
+
+// for (isConfirm==true; isConfirm = false;i++){
+//     var isConfirm = confirm('Bạn đồng ý rằng Hiển đẹp trai chứ?')
+// }
+
+var isConfirm = confirm('Hien dep trai?')
+if(isConfirm ==true){
+    console.log('true')
+}else{
+    console.log('false')
+}
