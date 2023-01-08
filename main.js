@@ -99,4 +99,9 @@ function test(){
 
     }
 }
+<<<<<<< HEAD
 test('Log1','l2','log3')
+=======
+test('Log1','l2')
+a
+>>>>>>> f47343b (test)
