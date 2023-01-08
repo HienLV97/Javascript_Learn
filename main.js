@@ -74,9 +74,48 @@ var fullName = '   Hien JS JS abc xasd acsc JS JS J S   ';
 // console.log(languages.split(''))
 
 
-var languages = [
-    'Javascript', 
-    'PHP', 
-    'Ruby'];
-console.log(languages)
-console.log(languages.join('a'))
+// var languages = [
+//     'Javascript', 
+//     'PHP', 
+//     'Ruby'];
+// console.log(languages)
+// console.log(languages.join('a'))
+
+// function writeLog(message,message2,message3){
+//     if (message){
+//         console.log(message)
+//     } 
+
+//     console.log(message2)
+//     console.log(message3)
+    
+// }
+// writeLog('a chuong')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function test(){
+    for (var param of arguments){
+
+        console.log(arguments)
+
+    }
+}
+test('Log1','l2')
