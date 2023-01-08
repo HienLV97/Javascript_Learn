@@ -73,10 +73,29 @@ var fullName = '   Hien JS JS abc xasd acsc JS JS J S   ';
 // var languages = 'Javascript, PHP, Ruby'
 // console.log(languages.split(''))
 
-
 var languages = [
-    'Javascript', 
-    'PHP', 
-    'Ruby'];
+    '1', 
+    '2', 
+    '3'];
 console.log(languages)
-console.log(languages.join('a'))
+//console.log(languages.join('a'))
+console.log(languages.pop()) // xóa phần tử cuối mảng
+console.log(languages.push('a')) // thêm phần tử cuối mảng
+console.log(languages.shift())// xóa phần tử đầu mảng
+console.log(languages.unshift('b','c'))// thêm phần tử đầu mảng
+console.log(languages)
+languages.splice(1,0,'4','5','6')
+console.log(languages)
+
+var languages2 =[
+    'test1',
+    'test2',
+    'test3'
+]
+console.log(languages.concat(languages2))// nối Array
+console.log(languages)
+console.log(languages.slice(3))
+function Hiendeptrai(){
+    alert('Hiển đẹp trai')
+};
+Hiendeptrai();
