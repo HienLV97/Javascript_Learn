@@ -122,9 +122,8 @@ console.log(result)
 //     var isConfirm = confirm('Bạn đồng ý rằng Hiển đẹp trai chứ?')
 // }
 
-var isConfirm = confirm('Hien dep trai?')
-if(isConfirm ==true){
-    console.log('true')
-}else{
-    console.log('false')
+var isConfirm = false
+while(!isConfirm) {
+    isConfirm = confirm('Hien dep trai?')
+
 }
