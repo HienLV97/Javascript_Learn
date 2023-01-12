@@ -122,8 +122,18 @@ console.log(result)
 //     var isConfirm = confirm('Bạn đồng ý rằng Hiển đẹp trai chứ?')
 // }
 
-var isConfirm = false
-while(!isConfirm) {
-    isConfirm = confirm('Hien dep trai?')
+// var isConfirm = false
+// while(!isConfirm) {
+//     isConfirm = confirm('Hien dep trai?')
 
-}
+// }
+
+var ab = 10
+var abc = ab--
+console.log(abc)
+console.log(ab)
+
+var a = 10;  11
+var b = ++a * a--;
+console.log('So b:'+b)
+console.log('So a:'+a)
