@@ -133,7 +133,46 @@ var abc = ab--
 console.log(abc)
 console.log(ab)
 
-var a = 10;  11
+var a = 10;
 var b = ++a * a--;
+   
+
 console.log('So b:'+b)
 console.log('So a:'+a)
+
+var coursesStr = 'HTML & CSS, JavaScript, ReactJS';
+
+function strToArray(str) {
+    return str.split(', ')
+}
+// Expected results 
+console.log(strToArray(coursesStr)) 
+
+// Output: ['HTML & CSS', 'JavaScript', 'ReactJS']
+
+
+// var languages = 'Javascript, PHP, Ruby'
+// console.log(languages.split(''))
+
+// Đối tượng Number
+
+// Đối tượng Number trong Javascript là đối tượng giúp chúng ta định nghĩa số và làm việc với số. Chúng ta thường sử dụng các phương thức sau của đối tượng Number khi làm việc với số trong Javascript:
+// Phương thức 	Vai trò
+// Number.isFinite() 	Xác định xem giá trị đã cho có phải là số hữu hạn hay không. Trả về boolean
+// Number.isInteger() 	Xác định xem giá trị đã cho có phải là số nguyên hay không. Trả về boolean
+// Number.parseFloat() 	Chuyển đổi chuỗi đã cho thành một số dấu phẩy động
+// Number.parseInt() 	Chuyển đổi chuỗi đã cho thành một số nguyên
+// Number.prototype.toFixed() 	Chuyển đổi và trả về chuỗi đại diện cho số đã cho, có số chữ số chính xác sau dấu thập phân
+// Number.prototype.toString() 	Chuyển đổi và trả về số đã cho dưới dạng chuỗi
+
+function isNumber(value) {
+    return isNaN(value) == false &&  typeof value === 'number'
+}
+
+// Expected results:
+console.log(isNumber(999)); // true
+console.log(isNumber('abc')); // false
+console.log(isNumber('100')); // false
+
+console.log(isNumber(NaN)); // false
+console.log(isNumber(100 / 'abc')); // false
