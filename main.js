@@ -176,3 +176,72 @@ console.log(isNumber('100')); // false
 
 console.log(isNumber(NaN)); // false
 console.log(isNumber(100 / 'abc')); // false
+
+/*
+1. toString
+    - chuyển từ array => chuỗi
+    - languages.toString()
+2. Join
+    - languages.join(', ')
+3. Pop
+    - xóa đi phần tử cuối mảng và trả về phần tử đã xóa
+     languages.pop()
+4.  push
+    - thêm phần tử vào cuối mảng
+    languages.push('abc')
+5. Shift
+    - xóa đi 1 phần tử ở đầu mảng và trả về phần tử đã xóa
+    languages.shift()
+6. Unshift
+    - Thêm đi 1 phần tử ở đầu mảng và trả về độ dài mới của mảng
+    languages.unshift('abc','edf')
+7 Splicing
+    - Xóa(chèn) 1 phần tử bất kì trong mảng bằng cách đếm index
+    xóa: languages.splice(1,2)
+    chèn: languages.splice(1,0,'das') (đếm index, xóa bao nhiêu kí tự, chèn kí tự)
+8. Concat
+    merge 2 array
+    languages2.concat(language)
+9 Slicing
+    - cắt phần tử trong mảng
+    languages.slice()
+    languages.slice(0) thì thành coppy array
+    
+
+*/
+/*
+Làm việc với mảng #1
+
+Cho trước hàm joinWithCharacter có 2 tham số là array và charactor,
+ hãy hoàn thành phần nội dung hàm sao cho hàm trả về 1 chuỗi là kết quả của việc
+nối từng phần tử của mảng với charactor.
+function joinWithCharacter(array, charactor) {
+    return cars.join(charactor)
+}
+
+
+Ví dụ khi sử dụng
+var cars = ['Honda', 'Mazda', 'Mercedes'];
+
+var result = joinWithCharacter(cars, ' - ');
+
+console.log(result); // Expected: "Honda - Mazda - Mercedes"
+console.log(typeof result); // Expected: "Honda - Mazda - Mercedes"
+*/
+/*
+Làm việc với mảng #2
+Cập nhật tháng 3 năm 2022
+
+Để vượt qua thử thách này, hãy tạo hàm getLastElement có 1 tham số
+ (F8 sẽ gọi hàm này và luôn truyền đối số là 1 array), hàm này sẽ trả về phần tử cuối cùng trong mảng.
+ */// Viết hàm tại đây
+function getLastElement(animals){
+    return animals.slice(0,1).toString()
+    // return 
+}
+
+var animals = ['Monkey', 'Tiger', 'Elephant','cop','ha ma','su tu'];
+var result = getLastElement(animals);
+
+console.log(result); // Expected: "Elephant"
+console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
