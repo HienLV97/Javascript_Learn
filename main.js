@@ -92,31 +92,31 @@
 // }
 // writeLog('a chuong')
 
-function test2333() {
-    var dulieu = '';
-    for (var param of arguments) {
-        dulieu += `${param} + `
-    }
-    console.log(dulieu)
-}
-test2333('Data1', 'dat2', 'data3', 'data4')
+// function test2333() {
+//     var dulieu = '';
+//     for (var param of arguments) {
+//         dulieu += `${param} + `
+//     }
+//     console.log(dulieu)
+// }
+// test2333('Data1', 'dat2', 'data3', 'data4')
 
 
-function test() {
-    var myString = '';
-    for (var param of arguments) {
-        myString += `${param} - `
-    }
-    console.log(myString)
-}
-test('Log1', 'l2', 'log3', 'log33')
+// function test() {
+//     var myString = '';
+//     for (var param of arguments) {
+//         myString += `${param} - `
+//     }
+//     console.log(myString)
+// }
+// test('Log1', 'l2', 'log3', 'log33')
 
-// Return trong hàm 
-function cong(soA, soB) {
-    return soA + soB
-}
-var result = cong(20, 8)
-console.log(result)
+// // Return trong hàm 
+// function cong(soA, soB) {
+//     return soA + soB
+// }
+// var result = cong(20, 8)
+// console.log(result)/
 
 // for (isConfirm==true; isConfirm = false;i++){
 //     var isConfirm = confirm('Bạn đồng ý rằng Hiển đẹp trai chứ?')
@@ -128,25 +128,25 @@ console.log(result)
 
 // }
 
-var ab = 10
-var abc = ab--
-console.log(abc)
-console.log(ab)
+// var ab = 10
+// var abc = ab--
+// console.log(abc)
+// console.log(ab)
 
-var a = 10;
-var b = ++a * a--;
+// var a = 10;
+// var b = ++a * a--;
    
 
-console.log('So b:'+b)
-console.log('So a:'+a)
+// console.log('So b:'+b)
+// console.log('So a:'+a)
 
-var coursesStr = 'HTML & CSS, JavaScript, ReactJS';
+// var coursesStr = 'HTML & CSS, JavaScript, ReactJS';
 
-function strToArray(str) {
-    return str.split(', ')
-}
-// Expected results 
-console.log(strToArray(coursesStr)) 
+// function strToArray(str) {
+//     return str.split(', ')
+// }
+// // Expected results 
+// console.log(strToArray(coursesStr)) 
 
 // Output: ['HTML & CSS', 'JavaScript', 'ReactJS']
 
@@ -165,17 +165,17 @@ console.log(strToArray(coursesStr))
 // Number.prototype.toFixed() 	Chuyển đổi và trả về chuỗi đại diện cho số đã cho, có số chữ số chính xác sau dấu thập phân
 // Number.prototype.toString() 	Chuyển đổi và trả về số đã cho dưới dạng chuỗi
 
-function isNumber(value) {
-    return isNaN(value) == false &&  typeof value === 'number'
-}
+// function isNumber(value) {
+//     return isNaN(value) == false &&  typeof value === 'number'
+// }
 
-// Expected results:
-console.log(isNumber(999)); // true
-console.log(isNumber('abc')); // false
-console.log(isNumber('100')); // false
+// // Expected results:
+// console.log(isNumber(999)); // true
+// console.log(isNumber('abc')); // false
+// console.log(isNumber('100')); // false
 
-console.log(isNumber(NaN)); // false
-console.log(isNumber(100 / 'abc')); // false
+// console.log(isNumber(NaN)); // false
+// console.log(isNumber(100 / 'abc')); // false
 
 /*
 1. toString
@@ -235,13 +235,25 @@ Cập nhật tháng 3 năm 2022
 Để vượt qua thử thách này, hãy tạo hàm getLastElement có 1 tham số
  (F8 sẽ gọi hàm này và luôn truyền đối số là 1 array), hàm này sẽ trả về phần tử cuối cùng trong mảng.
  */// Viết hàm tại đây
-function getLastElement(animals){
-    return animals.slice(0,1).toString()
-    // return 
+// function getLastElement(animals){
+//     return animals.slice(0,1).toString()
+//     // return 
+// }
+
+// var animals = ['Monkey', 'Tiger', 'Elephant','cop','ha ma','su tu'];
+// var result = getLastElement(animals);
+
+// console.log(result); // Expected: "Elephant"
+// console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
+
+
+
+var myInfo = {
+    name: 'Hien',
+    age: 26,
+    address: 'DN',
+    country: 'VN'
 }
-
-var animals = ['Monkey', 'Tiger', 'Elephant','cop','ha ma','su tu'];
-var result = getLastElement(animals);
-
-console.log(result); // Expected: "Elephant"
-console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
+var sdt = 'sdt';
+console.log(myInfo[sdt])
+console.log(myInfo)
