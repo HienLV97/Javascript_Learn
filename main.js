@@ -246,14 +246,59 @@ Cập nhật tháng 3 năm 2022
 // console.log(result); // Expected: "Elephant"
 // console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
 
+// var school = 'test'
 
-
-var myInfo = {
-    name: 'Hien',
-    age: 26,
-    address: 'DN',
-    country: 'VN'
+// var myInfo = {
+//     name: 'Hien',
+//     age: 26,
+//     address: 'DN',
+//     country: 'VN',
+//     [test]: 'THPT Thai Phien'
+// }
+// myInfo.email = 'hiendep@gmail.com'
+// myInfo['emai-name'] = ['hien le']
+// console.log(myInfo)
+// var myage = 'age'
+// console.log(myInfo[myage])
+/*
+ !  Bài 76 
+  function User(firstName,age,school,marriage) {
+    this.firstName = firstName,
+    this.age = age,
+    this.school = school,
+    this.marriage = marriage,
+    this.info = function(){
+        return `${this.firstName} ${this.age}`
+    }
 }
-var sdt = 'sdt';
-console.log(myInfo[sdt])
-console.log(myInfo)
+var hien = new User('LV Hien','26','Thai Phien','Y')
+
+var Quynh = new User('LV ','56','Thai Phien','n')
+console.log(hien.info())
+console.log(Quynh)
+*/
+
+// !Bài 78 + 80
+/*  
+function User(firstName,age,school,marriage) {
+    this.firstName = firstName,
+    this.age = age,
+    this.school = school,
+    this.marriage = marriage,
+    this.info = function(){
+        return `${this.firstName} ${this.age}`
+    }
+}
+var hien = new User('LV Hien','26','Thai Phien','Y')
+
+var Quynh = new User('LV ','56','Thai Phien','n')
+User.prototype.depTrai = 'Yes'
+
+console.log(hien.depTrai)
+
+console.log(hien)
+console.log(Quynh)
+*/
+// ! Bài 80 date
+// var date = Date() thì sẽ lấy ra chuỗi string
+var
