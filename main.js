@@ -301,4 +301,55 @@ console.log(Quynh)
 */
 // ! Bài 80 date
 // var date = Date() thì sẽ lấy ra chuỗi string
-var
+// var date = new Date()
+// var year = date.getFullYear()
+// var month = date.getMonth() +1
+// var day = date.getDate()
+// console.log(date)
+// console.log(date.getFullYear())
+// console.log(typeof year)
+// console.log(date.getMonth()+1)
+// console.log(date.getDate())
+// console.log(date.getTime())
+
+// console.log(`${day}/${month}/${year}`)
+// var date = new Date()
+// var nextYear = date.getFullYear()
+// console.log(nextYear)
+// function getNextYear(){
+//      return nextYear + 1
+// }
+// console.log(getNextYear())
+
+//! Math object
+// console.log(Math.PI)
+// console.log(Math.round(3.64235))
+// console.log(Math.abs(-5)) //* giá trị tuyệt đối
+// console.log(Math.ceil(3.00003)) //* làm tròn trên
+// console.log(Math.floor(4.9)) //* làm tròn dưới
+// console.log(Math.min(10,2,4,5,6,21,6,234,23,1,2,4,-1,23))
+// console.log(Math.max(10,123,4,1235,234,653246,3246,1,4))
+// console.log(Math.floor(Math.random()*10))
+// var cuongHoa = Math.floor(Math.random()*100)
+// if (cuongHoa <20){
+//     console.log('Cuong hoa thanh cong')
+// }else{
+//     console.log('Fail')
+// }
+
+var ranDom=[
+   '1','2'
+]
+console.log(ranDom.length)
+function getRandomItem(ranDom) {
+    return  this.ranDom = ranDom[Math.random()]
+    return console.log(ranDom)
+}
+console.log(getRandomItem())
+
+
+// var Item = ['Keo','bua','bao' ]
+// var getRandomItem = function(Item) {
+//      return Item[Math.floor(Math.random() * Item.length)] }
+
+// console.log(getRandomItem(Item))
