@@ -340,7 +340,7 @@ console.log(Quynh)
 var ranDom=[
    '1','2'
 ]
-console.log(ranDom.length)
+console.log(ranDom.lengthgiet)
 function getRandomItem(ranDom) {
     return  this.ranDom = ranDom[Math.random()]
     return console.log(ranDom)
