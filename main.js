@@ -329,7 +329,7 @@ console.log(Quynh)
 // console.log(Math.floor(4.9)) //* làm tròn dưới
 // console.log(Math.min(10,2,4,5,6,21,6,234,23,1,2,4,-1,23))
 // console.log(Math.max(10,123,4,1235,234,653246,3246,1,4))
-// console.log(Math.floor(Math.random()*10))
+// console.log(Math.floor(Math.random()*3))
 // var cuongHoa = Math.floor(Math.random()*100)
 // if (cuongHoa <20){
 //     console.log('Cuong hoa thanh cong')
@@ -337,19 +337,78 @@ console.log(Quynh)
 //     console.log('Fail')
 // }
 
-var ranDom=[
-   '1','2'
-]
-console.log(ranDom.length)
-function getRandomItem(ranDom) {
-    return  this.ranDom = ranDom[Math.random()]
-    return console.log(ranDom)
-}
-console.log(getRandomItem())
 
 
 // var Item = ['Keo','bua','bao' ]
 // var getRandomItem = function(Item) {
-//      return Item[Math.floor(Math.random() * Item.length)] }
+//      return Item[1] }
 
 // console.log(getRandomItem(Item))
+
+// ! if
+// function run(a) {
+//     if(a % 15 == 0){
+//         return this.a = 3
+//      }
+//      if(a % 3 == 0){
+//        return this.a = 1 
+//     }
+//     if(a % 5 == 0){
+//         return this.a = 2 
+//     }
+// }
+// function run(a) {
+//     if (a % 3 === 0 && a < 5){
+//         return 1;
+//     }
+//     else if (a % 5 === 0 && a < 15){
+//         return 2;
+//     }
+//     else if (a % 15 === 0){
+//         return 3;
+//     }
+// }
+
+
+
+// Kỳ vọng
+// console.log(run(15)) // 3
+// console.log(run(3)) // 1
+// console.log(run(5)) // 2
+
+// function run(fruits) {
+//     var result;
+
+//     switch (fruits) {
+//          case "Banana": 
+//             result = "This is a Banana";
+//             break
+//         case "Apple":
+//             result = "This is an Apple";
+//             break;
+//         default:
+//              result = "No fruits";
+//     }
+
+//     return result;
+// }
+//!toán tử 3 ngôi
+
+// var course ={
+//     name: 'test',
+//     cost: 0
+// }
+
+// var result =course.cost > 0 ? `${course.cost} Coin` : "Free"
+// console.log(result)
+
+// Làm bài
+function getCanVoteMessage(age){
+    return age >= 18 ? "Bạn có thể bỏ phiếu" : "Bạn chưa được bỏ phiếu"
+}
+
+
+
+// Kỳ vọng
+console.log(getCanVoteMessage(18)) // 'Bạn có thể bỏ phiếu'
+console.log(getCanVoteMessage(15)) // 'Bạn chưa được bỏ phiếu'
