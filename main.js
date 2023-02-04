@@ -339,11 +339,11 @@ console.log(Quynh)
 
 
 
-// var Item = ['Keo','bua','bao' ]
-// var getRandomItem = function(Item) {
-//      return Item[1] }
+var Item = ['Keo','bua','bao' ]
+var getRandomItem = function(Item) {
+     return Item[Math.floor(Math.random()*Item.length)] }
 
-// console.log(getRandomItem(Item))
+console.log(getRandomItem(Item))
 
 // ! if
 // function run(a) {
@@ -403,12 +403,12 @@ console.log(Quynh)
 // console.log(result)
 
 // Làm bài
-function getCanVoteMessage(age){
-    return age >= 18 ? "Bạn có thể bỏ phiếu" : "Bạn chưa được bỏ phiếu"
-}
+// function getCanVoteMessage(age){
+//     return age >= 18 ? "Bạn có thể bỏ phiếu" : "Bạn chưa được bỏ phiếu"
+// }
 
 
 
-// Kỳ vọng
-console.log(getCanVoteMessage(18)) // 'Bạn có thể bỏ phiếu'
-console.log(getCanVoteMessage(15)) // 'Bạn chưa được bỏ phiếu'
+// // Kỳ vọng
+// console.log(getCanVoteMessage(18)) // 'Bạn có thể bỏ phiếu'
+// console.log(getCanVoteMessage(15)) // 'Bạn chưa được bỏ phiếu'
