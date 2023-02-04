@@ -341,16 +341,17 @@ var ranDom=[
    '1','2'
 ]
 console.log(ranDom.length)
-function getRandomItem(ranDom) {
+const getRandomItem = (ranDom) => {
     return  this.ranDom = ranDom[Math.random()]
     return console.log(ranDom)
 }
 console.log(getRandomItem())
 
 
-var Item = ['Keo','bua','bao' ]
-var getRandomItem = function(Item) {
-     return Item[Math.floor(Math.random()*Item.length)] }
+let Item = ['Keo','bua','bao' ];
+const getRandomItem = (Item) => {
+     return Item[Math.floor(Math.random()*Item.length)] 
+}
 
 console.log(getRandomItem(Item))
 
