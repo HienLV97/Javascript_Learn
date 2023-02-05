@@ -91,7 +91,7 @@
 
 // }
 // writeLog('a chuong')
-
+//! Cách truyển param vào function
 // function test2333() {
 //     var dulieu = '';
 //     for (var param of arguments) {
@@ -135,7 +135,7 @@
 
 // var a = 10;
 // var b = ++a * a--;
-   
+
 
 // console.log('So b:'+b)
 // console.log('So a:'+a)
@@ -169,14 +169,14 @@
 //     return isNaN(value) == false &&  typeof value === 'number'
 // }
 
-// // Expected results:
+// Expected results:
 // console.log(isNumber(999)); // true
 // console.log(isNumber('abc')); // false
 // console.log(isNumber('100')); // false
 
 // console.log(isNumber(NaN)); // false
 // console.log(isNumber(100 / 'abc')); // false
-
+//! Các hàm array
 /*
 1. toString
     - chuyển từ array => chuỗi
@@ -237,7 +237,6 @@ Cập nhật tháng 3 năm 2022
  */// Viết hàm tại đây
 // function getLastElement(animals){
 //     return animals.slice(0,1).toString()
-//     // return 
 // }
 
 // var animals = ['Monkey', 'Tiger', 'Elephant','cop','ha ma','su tu'];
@@ -337,22 +336,22 @@ console.log(Quynh)
 //     console.log('Fail')
 // }
 
-var ranDom=[
-   '1','2'
-]
-console.log(ranDom.length)
-function getRandomItem(ranDom) {
-    return  this.ranDom = ranDom[Math.random()]
-    return console.log(ranDom)
-}
-console.log(getRandomItem())
+// var ranDom=[
+//    '1','2'
+// ]
+// console.log(ranDom.length)
+// function getRandomItem(ranDom) {
+//     return  this.ranDom = ranDom[Math.random()]
+//     return console.log(ranDom)
+// }
+// console.log(getRandomItem())
 
 
-var Item = ['Keo','bua','bao' ]
-var getRandomItem = function(Item) {
-     return Item[Math.floor(Math.random()*Item.length)] }
+// var Item = ['Keo','bua','bao' ]
+// var getRandomItem = function(Item) {
+//      return Item[Math.floor(Math.random()*Item.length)] }
 
-console.log(getRandomItem(Item))
+// console.log(getRandomItem(Item))
 
 // ! if
 // function run(a) {
@@ -419,5 +418,175 @@ console.log(getRandomItem(Item))
 
 
 // Kỳ vọng
-console.log(getCanVoteMessage(18)) // 'Bạn có thể bỏ phiếu'
-console.log(getCanVoteMessage(15)) // 'Bạn chưa được bỏ phiếu'
+// console.log(getCanVoteMessage(18)) // 'Bạn có thể bỏ phiếu'
+// console.log(getCanVoteMessage(15)) // 'Bạn chưa được bỏ phiếu'
+
+// ! vòng lặp for
+// for (i =1; i <= 100; i++){
+//     console.log(i)
+// }
+/*
+Tạo danh sách số ngẫu nhiên
+Cập nhật tháng 4 năm 2022
+
+Để vượt qua thử thách này, bạn cần kết hợp nhiều kiến thức đã học như:
+ làm việc với array, đối tượng Math và loop.
+
+👉 Hãy tạo hàm getRandNumbers có 3 tham số là min, max, length.
+Hàm này sẽ trả về một mảng gồm length phần tử, các giá trị trong mảng là số ngẫu nhiên,
+ giá trị trong khoảng từ min tới max.
+
+Gợi ý: Math.random() * (max - min) + min là cách tạo ra 1 số ngẫu nhiên 
+ trong khoảng min - max.
+*/
+// Làm bài
+
+
+
+
+// function getRandNumbers(min, max, length) {
+//     return mang = [Math.random() * (this.max - this.min) + this.min]
+// }
+
+
+
+// function getRandNumbers1(min, max, length) {
+//     return a = [Math.random() * 4 + 1];
+// }
+
+
+
+/* for (i = 1; i <= 10; i++) {
+    console.log(getRandNumbers())
+}
+
+console.log('----------------------------------------')
+
+for (i = 1; i <= 10; i++) {
+    console.log(getRandNumbers1(a))
+}
+ */
+// Làm bài 
+
+/* var min =1
+var max =5
+var length = 3
+function getRandNumbers(min, max, length) {
+    aBc = []
+    for (i = 1; i = this.length; i++) {
+        add = Math.random() * (this.max - this.min) + this.min
+        this.aBc.push(add)     
+    }
+    return aBc
+}
+console.log(getRandNumbers()) */
+/**
+ * Hết sức lưu ý: Hãy suy nghĩ kỹ để đảm bảo vòng lặp (loop)
+ * luôn có điểm dừng, trình duyệt của bạn sẽ bị treo
+ * nếu vòng lặp không có điểm dừng.
+ * 
+ * VD 1: for (var i = 0; i < 100; i--) // i++ mới đúng
+ * VD 2: for (var i = 100; i >= 0; i++) // i-- mới đúng
+ * là 2 vòng lặp không có điểm dừng (lặp vô hạn)
+ * 
+ * => Treo trình duyệt!!!
+ *//* 
+var min =1
+var max =5
+var length = 3
+function getRandNumbers(min,max,length){
+var aBc =[]
+for (i = 1; i <= this.length; i++) {
+ var  add = Math.random() * (this.max - this.min) + this.min
+   aBc.push(add)     
+}
+return aBc
+}
+console.log(getRandNumbers()) */
+/* arr = [1, 2, 3, 4, 5, 6]
+var a
+var sum = 0
+for (i = 0; i <= arr.length-1; i++) {
+    let a = parseInt(arr.slice(i,i+1).toString())
+    sum += a
+} */
+
+/* function getTotal(arr) {
+    var a
+    var sum = 0
+    for (i = 0; i <= this.arr.length - 1; i++) {
+        let a = parseInt(this.arr.slice(i, i + 1).toString())
+        sum += a
+    } return sum
+}
+console.log(getTotal()) */
+console.log('still active')
+/* 
+function getTotal2(arr){
+    var a
+    var sum = 0
+    for (i =this.arr.length; i >= 1; i--) { 
+        let a = parseInt(this.arr.slice(this.arr.length-1,this.arr.length).toString())
+        // console.log(a)
+        this.arr.pop()
+        sum += a
+    } return sum
+}
+console.log('Done: '+getTotal2()) */
+// arr = [1, 2, 3, 4, 5, 6]
+function getTotal(arr) {
+    var a
+        var sum = 0
+        for (i =this.arr.length; i >= 1; i--) { 
+            let a = parseInt(this.arr.slice(this.arr.length-1,this.arr.length).toString())
+            console.log(a)
+            this.arr.pop()
+            sum = sum+ a
+        } return sum
+    }
+    // Expected results
+     getTotal([1, 2, 3]) // Output: 6
+    // getTotal([4, 5, -3]) // Output: 6
+    // getTotal([4, 5, 3, 5]) // Output: 17
+    console.log(getTotal())
+/* 
+Đối tượng Number trong Javascript là đối tượng giúp chúng ta định nghĩa số và làm việc với số. 
+Chúng ta thường sử dụng các phương thức sau của đối tượng Number khi làm việc với số trong Javascript:
+Phương thức 	Vai trò
+Number.isFinite() 	Xác định xem giá trị đã cho có phải là số hữu hạn hay không. Trả về boolean
+Number.isInteger() 	Xác định xem giá trị đã cho có phải là số nguyên hay không. Trả về boolean
+Number.parseFloat() 	Chuyển đổi chuỗi đã cho thành một số dấu phẩy động
+Number.parseInt() 	Chuyển đổi chuỗi đã cho thành một số nguyên
+Number.prototype.toFixed() 	Chuyển đổi và trả về chuỗi đại diện cho số đã cho, có số chữ số chính xác sau dấu thập phân
+Number.prototype.toString() 	Chuyển đổi và trả về số đã cho dưới dạng chuỗi */
+
+/*
+1. toString
+    - chuyển từ array => chuỗi
+    - languages.toString()
+2. Join
+    - languages.join(', ')
+3. Pop
+    - xóa đi phần tử cuối mảng và trả về phần tử đã xóa
+     languages.pop()
+4.  push
+    - thêm phần tử vào cuối mảng
+    languages.push('abc')
+5. Shift
+    - xóa đi 1 phần tử ở đầu mảng và trả về phần tử đã xóa
+    languages.shift()
+6. Unshift
+    - Thêm đi 1 phần tử ở đầu mảng và trả về độ dài mới của mảng
+    languages.unshift('abc','edf')
+7 Splicing
+    - Xóa(chèn) 1 phần tử bất kì trong mảng bằng cách đếm index
+    xóa: languages.splice(1,2)
+    chèn: languages.splice(1,0,'das') (đếm index, xóa bao nhiêu kí tự, chèn kí tự)
+8. Concat
+    merge 2 array
+    languages2.concat(language)
+9 Slicing
+    - cắt phần tử trong mảng
+    languages.slice()
+    languages.slice(0) thì thành coppy array
+*/
