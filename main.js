@@ -497,8 +497,8 @@ var length = 3
 function getRandNumbers(min,max,length){
 var aBc =[]
 for (i = 1; i <= this.length; i++) {
- var  add = Math.random() * (this.max - this.min) + this.min
-   aBc.push(add)     
+var  add = Math.random() * (this.max - this.min) + this.min
+aBc.push(add)     
 }
 return aBc
 }
@@ -534,22 +534,33 @@ function getTotal2(arr){
 }
 console.log('Done: '+getTotal2()) */
 // arr = [1, 2, 3, 4, 5, 6]
-function getTotal(arr) {
+
+
+/* function getTotal(arr) {
     var a
-        var sum = 0
-        for (i =this.arr.length; i >= 1; i--) { 
-            let a = parseInt(this.arr.slice(this.arr.length-1,this.arr.length).toString())
-            console.log(a)
-            this.arr.pop()
-            sum = sum+ a
+    var sum = 0
+    for (i = 1; ; i++) {
+        {
+            if (a == undefined) {
+                break
+            }
+            a = arr.pop()
+            sum = sum + a
         } return sum
     }
-    // Expected results
-     getTotal([1, 2, 3]) // Output: 6
-    // getTotal([4, 5, -3]) // Output: 6
-    // getTotal([4, 5, 3, 5]) // Output: 17
-    console.log(getTotal())
+} */
+// Expected results // Output: 6
+// getTotal([4, 5, -3]) // Output: 6
+// getTotal([4, 5, 3, 5]) // Output: 17
+// console.log(getTotal([1, 2, 3]))
 /* 
+for (i =1;i<=10;i++){
+    a = arr.pop()
+    if(a == undefined){
+        break
+    }
+    console.log(a)
+
 Đối tượng Number trong Javascript là đối tượng giúp chúng ta định nghĩa số và làm việc với số. 
 Chúng ta thường sử dụng các phương thức sau của đối tượng Number khi làm việc với số trong Javascript:
 Phương thức 	Vai trò
@@ -590,3 +601,42 @@ Number.prototype.toString() 	Chuyển đổi và trả về số đã cho dướ
     languages.slice()
     languages.slice(0) thì thành coppy array
 */
+/* for (i =1;i<=10;i++){
+    a = arr.pop()
+    if(a == undefined){
+        break
+    }
+    console.log(a)
+}
+ */
+arr = [1, 2, 3, 4, 5, 6]
+
+
+sum = 0
+sum1 =0
+let acc = new Array()
+function test(acc){
+    for (i = 1; i <= 10; i++) {
+        let a = []
+        a = acc.pop()
+        if (a == undefined) {
+            break
+        }
+        sum += a
+        console.log(sum)
+    } return sum
+}
+test([4, 5, -3]) // Output: 6
+console.log(test())
+
+
+/* 
+for (i = 1; i <= 10; i++) {
+    a = arr.pop()
+    if (a == undefined) {
+        break
+    }
+    sum += a
+    console.log(a)
+}
+console.log(sum) */
