@@ -612,24 +612,32 @@ Number.prototype.toString() 	Chuyển đổi và trả về số đã cho dướ
 // arr = [1, 2, 3, 4, 5, 6]
 
 
-sum = 0
-sum1 =0
+sum1 = 0
 // var acc = []
 var a = 0
+var arr = []
 
-function getTotal(arr){
+function getTotal(arr) {
+    var sum = 0
     for (i = 1; i <= 10; i++) {
-        if (a == undefined || a == NaN) {
-            break 
-        }else{
+        if (a !== undefined) {
             a = arr.pop()
-            sum += a
+            console.log(a)
+            // sum += a
+            sum = sum + a
             console.log(sum)
+            
+        }else{
+            break
         }
-    } return sum
+        // console.log(arr)
+    } 
+    
 }
+
+
 getTotal([4, 5, -3]) // Output: 6
-console.log(getTotal([4, 5, -3]))
+console.log('Active: '+getTotal([4, 5, -3]))
 
 
 /* 
