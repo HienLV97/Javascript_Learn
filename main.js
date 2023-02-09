@@ -609,25 +609,27 @@ Number.prototype.toString() 	Chuyển đổi và trả về số đã cho dướ
     console.log(a)
 }
  */
-arr = [1, 2, 3, 4, 5, 6]
+// arr = [1, 2, 3, 4, 5, 6]
 
 
 sum = 0
 sum1 =0
-let acc = new Array()
-function test(acc){
+// var acc = []
+var a = 0
+
+function getTotal(arr){
     for (i = 1; i <= 10; i++) {
-        let a = []
-        a = acc.pop()
-        if (a == undefined) {
-            break
+        if (a == undefined || a == NaN) {
+            break 
+        }else{
+            a = arr.pop()
+            sum += a
+            console.log(sum)
         }
-        sum += a
-        console.log(sum)
     } return sum
 }
-test([4, 5, -3]) // Output: 6
-console.log(test())
+getTotal([4, 5, -3]) // Output: 6
+console.log(getTotal([4, 5, -3]))
 
 
 /* 
