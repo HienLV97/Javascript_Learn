@@ -1,5 +1,6 @@
 //khai bao bien
 
+
 // var age = 26;
 
 // Call ham thong bao
@@ -611,34 +612,35 @@ Number.prototype.toString() 	Chuyển đổi và trả về số đã cho dướ
  */
 // arr = [1, 2, 3, 4, 5, 6]
 
-
+/* 
 sum1 = 0
 // var acc = []
 var a = 0
-var arr = []
+var numbers = []
 
-function getTotal(arr) {
+function getTotal(numbers) {
     var sum = 0
     for (i = 1; i <= 10; i++) {
+        a = numbers.pop()
         if (a !== undefined) {
-            a = arr.pop()
-            console.log(a)
+            console.log('a hiện tại: '+a)
             // sum += a
             sum = sum + a
             console.log(sum)
             
-        }else{
+        } else {
             break
         }
-        // console.log(arr)
-    } 
-    
+        
+    }
+    return sum
 }
 
-
-getTotal([4, 5, -3]) // Output: 6
-console.log('Active: '+getTotal([4, 5, -3]))
-
+numbers = [4, 5, 3, 5]
+getTotal([4, 5, 3, 5]) // Output: 17
+// getTotal([4, 5, -3]) // Output: 6
+console.log(getTotal(numbers))
+ */
 
 /* 
 for (i = 1; i <= 10; i++) {
@@ -650,3 +652,119 @@ for (i = 1; i <= 10; i++) {
     console.log(a)
 }
 console.log(sum) */
+
+// function getTotal(arr) {
+//     var sum = 0;
+//     for (var i = 0; i < arr.length; i++) {
+//         sum = sum + arr[i];
+//     }
+//     return sum;
+// }
+
+// // getTotal([4, 5, 3, 5]) // Output: 17
+// getTotal([4, 5, -3]) // Output: 6
+// console.log(getTotal([4, 5, -3]))
+
+// var languages = [
+//     'Javascript', 
+//     'PHP', 
+//     'Ruby',
+//     'C++',
+//     'C#'
+// ];
+// var lengthLanguages = languages.length
+// for (var i = 0; i < lengthLanguages; i++){
+//     console.log(languages[i])
+    
+// }
+
+var orders = [
+    {
+        name: 'Khóa học HTML - CSS Pro',
+        price: 3000000
+    },
+    {
+        name: 'Khóa học Javascript Pro',
+        price: 2500000
+    },
+    {
+        name: 'Khóa học React Pro',
+        price: 3200000
+    }
+]
+
+
+
+// Expected results:
+// getTotal(orders) // Output: 8700000
+
+
+// function getTotal(orders){
+//     var sum = 0
+//     for (var i = 0; i < orders.length; i++ ){
+//         sum +=(orders[i].price)       
+//     }
+//     return sum
+// }
+// // console.log(getTotal(orders))
+
+// // Expected results:
+// getTotal(orders) // Output: 8700000
+// console.log(getTotal(orders))
+
+
+// var languages = [
+//     'Javascript', 
+//     'PHP', 
+//     'Ruby'];
+// var myInfo = {
+//     name: 'Hien',
+//     age: 26,
+//     address: 'DN',
+//     country: 'VN'
+// }
+// console.log(myInfo)
+// for (var key in myInfo){
+//     console.log(myInfo[key])
+// }
+// for (var key in myInfo){
+//     console.log(key)
+// }
+
+// var myString = 'LeVinhHien'
+// var total =''
+// for (var key in myString ){
+//     var getCharacter = myString[key]
+//     console.log(getCharacter)
+//     total += getCharacter
+// }
+
+
+
+// console.log(total)
+function run(object) {
+    for (var key in object){
+        console.log(`${'Thuộc tính'} ${key} ${'có giá trị'} ${object[key]}`)
+        // console.log(key)
+    }
+    // return console.log(`${'Thuộc tính'} ${key} ${'có giá trị'} ${object[key]}`)
+}
+
+// Expected results:
+// console.log(run({ name: 'Nguyen Van A', age: 16 }));
+// Output:
+// [
+//     "Thuộc tính name có giá trị Nguyen Van A",
+//     "Thuộc tính age có giá trị 16"
+// ]
+
+var myInfo = {
+    name: 'Hien',
+    age: 26,
+    address: 'DN',
+    country: 'VN'
+}
+for (var key in object){
+    console.log(`${'Thuộc tính'} ${key} ${'có giá trị'} ${object[key]}`)
+    // console.log(key)
+}
