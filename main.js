@@ -675,7 +675,7 @@ console.log(sum) */
 // var lengthLanguages = languages.length
 // for (var i = 0; i < lengthLanguages; i++){
 //     console.log(languages[i])
-    
+
 // }
 
 var orders = [
@@ -706,9 +706,9 @@ var orders = [
 //     }
 //     return sum
 // }
-// // console.log(getTotal(orders))
+// console.log(getTotal(orders))
 
-// // Expected results:
+// Expected results:
 // getTotal(orders) // Output: 8700000
 // console.log(getTotal(orders))
 
@@ -743,28 +743,41 @@ var orders = [
 
 // console.log(total)
 function run(object) {
-    for (var key in object){
-        console.log(`${'Thuộc tính'} ${key} ${'có giá trị'} ${object[key]}`)
-        // console.log(key)
+    var test1 = []
+    var a = 'Quynh'
+    for (var key in object) {
+        test1.push(`${'Thuộc tính'} ${key} ${'có giá trị'} ${object[key]}`)
     }
-    // return console.log(`${'Thuộc tính'} ${key} ${'có giá trị'} ${object[key]}`)
+    return a
 }
 
-// Expected results:
-// console.log(run({ name: 'Nguyen Van A', age: 16 }));
+// // Expected results:
+console.log(run({ name: 'Nguyen Van A', age: 16 }));
 // Output:
 // [
 //     "Thuộc tính name có giá trị Nguyen Van A",
 //     "Thuộc tính age có giá trị 16"
-// ]
+// ] 
 
-var myInfo = {
-    name: 'Hien',
-    age: 26,
-    address: 'DN',
-    country: 'VN'
-}
-for (var key in object){
-    console.log(`${'Thuộc tính'} ${key} ${'có giá trị'} ${object[key]}`)
-    // console.log(key)
-}
+// var myInfo = {
+//     name: 'Hien',
+//     age: 26,
+//     function (){
+//         if(this.age <= 26){
+//             console.log('Còn trẻ')
+//         }else{
+//             console.log('Già vl')
+//         }
+//     }
+// }
+// console.log(myInfo.function())
+
+
+// for (i=1;i<=10;i++){
+// console.log('Hiển đẹp trai lần thứ:'+i)
+// }
+// var a = "hien"
+// var b = "dep"
+// var c = "trai"
+// console.log(a + ' ' + b + ' ' + c)
+// console.log(`${a} ${b} ${c}`)
