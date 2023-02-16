@@ -717,12 +717,7 @@ var orders = [
 //     'Javascript', 
 //     'PHP', 
 //     'Ruby'];
-// var myInfo = {
-//     name: 'Hien',
-//     age: 26,
-//     address: 'DN',
-//     country: 'VN'
-// }
+
 // console.log(myInfo)
 // for (var key in myInfo){
 //     console.log(myInfo[key])
@@ -742,17 +737,17 @@ var orders = [
 
 
 // console.log(total)
-function run(object) {
+/* function run(object) {
     var test1 = []
-    var a = 'Quynh'
+    // var a = 'Quynh'
     for (var key in object) {
         test1.push(`${'Thuộc tính'} ${key} ${'có giá trị'} ${object[key]}`)
     }
     return a
-}
+} */
 
-// // Expected results:
-console.log(run({ name: 'Nguyen Van A', age: 16 }));
+// Expected results:
+// console.log(run({ name: 'Nguyen Van A', age: 16 }));
 // Output:
 // [
 //     "Thuộc tính name có giá trị Nguyen Van A",
@@ -781,3 +776,13 @@ console.log(run({ name: 'Nguyen Van A', age: 16 }));
 // var c = "trai"
 // console.log(a + ' ' + b + ' ' + c)
 // console.log(`${a} ${b} ${c}`)
+
+var myInfo = {
+    name: 'Hien',
+    age: 26,
+    address: 'DN',
+    country: 'VN'
+}
+for (var value of myInfo){
+    
+}
