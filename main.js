@@ -783,6 +783,8 @@ var myInfo = {
     address: 'DN',
     country: 'VN'
 }
+
+// Quynh
 var myInfo1 = 'Le Vinh Hien'
 for (var value of myInfo1){
     console.log(value);
