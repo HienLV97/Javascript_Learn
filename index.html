@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" style="
 background: black;
 color: darkgray;
@@ -24,4 +24,51 @@ color: darkgray;
     <script>
     </script>
 </body>
-</html>
+</html> -->
+
+
+
+
+
+<h1 style="color: green">
+    GeeksforGeeks
+</h1>
+<b>How to check if a variable is
+    an array in JavaScript?</b>
+  
+<p>Click on the button to check
+    if the variable is an array</p>
+  
+<p>Output for string:
+<div class="outputString"></div>
+  
+<p>Output for number:
+<div class="outputNumber"></div>
+  
+<p>Output for array:
+<div class="outputArray"></div>
+  
+  
+<button onclick="checkArray()">
+    Click here
+</button>
+<script type="text/javascript">
+    function checkArray() {
+        let str = 'This is a string';
+        let num = 25;
+        let arr = [10, 20,25, 30, 40];
+      
+        ans = str.constructor === Array;
+        document.querySelector(
+        '.outputString').textContent = ans;
+          
+        ans = num.constructor === Array;
+        document.querySelector(
+        '.outputNumber').textContent = ans;
+          
+        ans = arr.constructor === Array;
+        document.querySelector(
+        '.outputArray').textContent = ans;
+          
+    }
+</script>

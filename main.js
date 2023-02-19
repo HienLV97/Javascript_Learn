@@ -786,6 +786,59 @@ var myInfo = {
 
 // Quynh
 var myInfo1 = 'Le Vinh Hien'
-for (var value of myInfo1){
+for (var value of myInfo1) {
+    if (value == 'e') {
+        continue;
+    }
     console.log(value);
 }
+// do/while 
+var i = 0
+// while ( i<= 10){
+//     console.log(i)
+//     i++
+// }
+//!kiểm tra điều kiện tại vòng lặp thứ 2
+var i = 0;
+var isSuccess = false
+do {
+    i++
+    console.log('Nap the lan: ' + i)
+    if (false) {
+        isSuccess = true
+    }
+} while (!isSuccess && i <= 3)
+
+//! bài toán
+//! Cho 1 dãy array gồm những chữ số, cho biết những số nào là số chẵn
+//! bài 2: tổng của 2 số lại bé hơn 20
+var arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+var result = []
+for (var key in arrayNumber) {
+    if (key % 2 !== 0) {
+        continue
+    }
+    result.push(key)
+}
+console.log(result)
+
+
+var arrayRandomNumber = [2]
+/*  
+var lengthRandomNumber = 10
+var i = 1
+while (i <= lengthRandomNumber ){
+    console.log(Math.floor(Math.random()*3))
+}
+
+ */
+var a = 1
+while (a !== 2) {
+    a = Math.floor(Math.random() * 10)
+    console.log(a)
+    if (a == 2) {
+        break
+    }
+
+}
+// console.log(Math.floor(Math.random()*10))
