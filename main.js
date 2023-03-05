@@ -811,9 +811,9 @@ do {
 
 //! bài toán
 //! Cho 1 dãy array gồm những chữ số, cho biết những số nào là số chẵn
-//! bài 2: tổng của 2 số lại bé hơn 20
+//! bài 2: tổng của 2 số = 20
 var arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-var result = []
+/* var result = []
 for (var key in arrayNumber) {
     if (key % 2 !== 0) {
         continue
@@ -822,8 +822,26 @@ for (var key in arrayNumber) {
 }
 console.log(result)
 
-
-var arrayRandomNumber = [2]
+var a = 2
+var arrayRandomNumber = [2] */
+/* 
+function findPairs(arrayNumber) {
+    let result = [];
+    
+    for (let i = 0; i < arrayNumber.length - 1; i++) {
+      for (let j = i + 1; j < arrayNumber.length; j++) {
+        if (arrayNumber[i] + arrayNumber[j] === 20) {
+          result.push([arrayNumber[i], arrayNumber[j]]);
+        }
+      }
+    }
+  
+    return result;
+  }
+//   let arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+  let pairs = findPairs(arrayNumber);
+  console.log(pairs);
+ */
 /*  
 var lengthRandomNumber = 10
 var i = 1
@@ -832,13 +850,40 @@ while (i <= lengthRandomNumber ){
 }
 
  */
-var a = 1
-while (a !== 2) {
-    a = Math.floor(Math.random() * 10)
-    console.log(a)
-    if (a == 2) {
-        break
-    }
+// var a = 1
+// while (a !== 2) {
+//     a = Math.floor(Math.random() * 10)
+//     console.log(a)
+//     if (a == 2) {
+//         break
+//     }
 
-}
+// }
 // console.log(Math.floor(Math.random()*10))
+
+//! vòng lặp lồng nhau
+
+// var myArray =[
+//     [1,2],
+//     [3,4],
+//     [5,6]
+// ]
+// for (var i = 0; i <myArray.length;i++){
+//     for (var j = 0; j < myArray[i].length; j++)
+//     console.log(myArray[i][j])
+// }
+// for (var i = 100; i >= 0; i-=5){
+//     console.log(i)
+// }
+
+var array = ['a','b','c','a','b','c','a','b','c'] 
+console.log([...(new Set(array))])
+
+function countDown(num){
+    if (num > 0){
+        console.log(num)
+        return countDown(num-1);
+    }
+    return num
+}
+countDown(10)
