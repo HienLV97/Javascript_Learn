@@ -802,7 +802,7 @@ var i = 0
 var i = 0;
 var isSuccess = false
 do {
-    i++
+    i++  
     console.log('Nap the lan: ' + i)
     if (false) {
         isSuccess = true
@@ -876,14 +876,23 @@ while (i <= lengthRandomNumber ){
 //     console.log(i)
 // }
 
-var array = ['a','b','c','a','b','c','a','b','c'] 
-console.log([...(new Set(array))])
+// var array = ['a','b','c','a','b','c','a','b','c'] 
+// console.log([...(new Set(array))])
 
-function countDown(num){
-    if (num > 0){
-        console.log(num)
-        return countDown(num-1);
+// function countDown(num){
+//     if (num > 0){
+//         console.log(num)
+//         return countDown(num-1);
+//     } 
+//     return num
+// }
+// countDown(10)
+
+function giaiThua(number){
+    if (number > 0){
+        return giaiThua * (giaiThua -1)        
+        // console.log(result)
     }
-    return num
+    return 1
 }
-countDown(10)
+giaiThua(10)
