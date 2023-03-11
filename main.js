@@ -887,12 +887,30 @@ while (i <= lengthRandomNumber ){
 //     return num
 // }
 // countDown(10)
-
+/* 
 function giaiThua(number){
     if (number > 0){
-        return giaiThua * (giaiThua -1)        
-        // console.log(result)
+        return number * giaiThua(number -1)        
+        // console.log(number)
     }
     return 1
 }
-giaiThua(10)
+console.log(giaiThua(4))
+
+
+function tong(numberT){
+    if (numberT > 0){
+        return numberT + tong(numberT -1)        
+        // console.log(number)
+    }
+    return 1
+}
+console.log(tong(4))
+
+ */
+
+var course=[
+
+]
+//! forEach() duyệt qua từng phần mảng
+
