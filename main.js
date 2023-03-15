@@ -910,7 +910,127 @@ console.log(tong(4))
  */
 
 var course=[
-
+    {
+        id: 1,
+        name: "HTML",
+        cost: 5000
+    },
+    {
+        id: 2,
+        name: "css",
+        cost: 5500
+    },
+    {
+        id: 3,
+        name: "java",
+        cost: 510
+    },
+    {
+        id: 4,
+        name: "next",
+        cost: 560
+    },
+    {
+        id: 5,
+        name: "nodejs",
+        cost: 800
+    },    
+    {
+        id: 6,
+        name: "JS",
+        cost: 9800
+    },    {
+        id: 7,
+        name: "C#",
+        cost: 900
+    }
 ]
 //! forEach() duyệt qua từng phần mảng
+//! every() trả về boolen tất cả các phần tử trong mảng phải thỏa điều kiện
+//! some() <> every, chỉ cần 1 trong mảng
+//! find()tìm kiếm phần tử trong mảng
+//! filter() lọc tất cả cá đối tượng
+/* course.forEach(function(course){
+    console.log(course)
+})
+console.log("---------------------")
 
+
+var is90 = course.every(function(course,index){
+    // console.log(index)
+    return course.cost > 900
+})
+console.log(is90)
+console.log("---------------------")
+
+var is90 = course.some(function(course,index){
+    console.log(index)
+    return course.cost < 900
+})
+console.log(is90)
+console.log("---------------------")
+
+
+var is90 = course.find(function(course,index){
+    // console.log(index)
+    return course.cost < 9800
+})
+console.log(is90)
+
+
+var is90 = course.filter(function(course,index){
+    // console.log(index)
+    return course.cost < 9800
+})
+console.log(is90)
+
+*/
+console.log("---------------------")
+const sports = [
+    {
+        name: 'Bóng rổ',
+        like: 6
+    },
+    {
+        name: 'Bơi lội',
+        like: 5
+    },
+    {
+        name: 'Bóng đá',
+        like: 10
+    },
+]
+/* const result = sports.filter(getMostFavoriteSport);
+function getMostFavoriteSport(sports){
+    return sports.like > 5
+}
+const result = sports.filter(getMostFavoriteSport);
+function getMostFavoriteSport(sports){
+    return sports.like > 5
+} 
+
+function getMostFavoriteSport(sports){
+    return sports.filter(function(sports){
+        return sports.like > 5
+    })
+}
+// Kỳ vọng
+console.log(getMostFavoriteSport(sports)) 
+// Output: [{ name: 'Bóng rổ, like: 6 }, { name: 'Bóng đá, like: 10 }]
+
+Để vượt qua thử thách này, hãy tạo hàm getMostFavoriteSport có 1 tham số
+ (F8 sẽ gọi hàm này và luôn truyền đối số là 1 array). 
+ Hàm getMostFavoriteSport sẽ trả về các môn thể thao có điểm số yêu thích lớn hơn 5.
+
+Gợi ý: Sử dụng phương thức filter.
+ */
+var newCourses = course.map(function newC(course,index,originArray){
+    return{
+        id: course.id,
+        name: `Khoa hoc: ${course.name}`,
+        cost: `${course.cost}$`,
+        originArray: course
+    }
+})
+
+console.log(newCourses)
