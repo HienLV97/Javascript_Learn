@@ -950,6 +950,7 @@ var course=[
 //! some() <> every, chỉ cần 1 trong mảng
 //! find()tìm kiếm phần tử trong mảng
 //! filter() lọc tất cả cá đối tượng
+//! reduce() 3333 
 /* course.forEach(function(course){
     console.log(course)
 })
@@ -1024,7 +1025,7 @@ console.log(getMostFavoriteSport(sports))
 
 Gợi ý: Sử dụng phương thức filter.
  */
-var newCourses = course.map(function newC(course,index,originArray){
+/* var newCourses = course.map(function newC(course,index,originArray){
     return{
         id: course.id,
         name: `Khoa hoc: ${course.name}`,
@@ -1034,3 +1035,15 @@ var newCourses = course.map(function newC(course,index,originArray){
 })
 
 console.log(newCourses)
+ */
+// var newCourses = course.map(function newC(course,index,originArray){
+//     return `<h2>${course.name}</h2>`
+// })
+
+// console.log(newCourses)
+var i = 0
+function costHandle(accumulator,currentValue,currentIndex,originArray){
+    i++
+    console.log(i)
+}
+var totalCost = course.reduce(costHandle,0)
