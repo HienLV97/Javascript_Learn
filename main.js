@@ -1047,3 +1047,13 @@ function costHandle(accumulator,currentValue,currentIndex,originArray){
     console.log(i)
 }
 var totalCost = course.reduce(costHandle,0)
+
+URLbase = "https://kamora:iamafriend@"
+var a = "javascript:void(0)"
+if(a != "javascript:void(0)"){
+
+    var test1 = a.replace("https://","")
+    // console.log(test1)
+    test1 = URLbase + test1
+}
+console.log(test1)
